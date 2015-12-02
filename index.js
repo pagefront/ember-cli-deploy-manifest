@@ -15,7 +15,7 @@ module.exports = {
     var DeployPlugin = DeployPluginBase.extend({
       name: options.name,
       defaultConfig: {
-        filePattern: '**/*.*',
+        filePattern: '**/*.!(html)',
         manifestPath: 'manifest.txt',
         distDir: function(context) {
           return context.distDir;
