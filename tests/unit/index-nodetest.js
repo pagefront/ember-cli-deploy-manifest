@@ -113,7 +113,7 @@ describe('manifest plugin', function() {
         project: { name: function() { return 'test-project'; } },
         config: {
           manifest: {
-            filePattern: '**/*.!(html)',
+            filePattern: '*',
             manifestPath: 'manifest.txt',
             distDir: function(context){ return context.distDir; },
             distFiles: function(context){ return context.distFiles; }
